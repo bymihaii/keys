@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond %{SERVER_NAME} =www.catacrack.net
+RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
